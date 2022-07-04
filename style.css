@@ -68,7 +68,6 @@ body{
 
 .card:hover{
     cursor: pointer;
-    /* transform: translateY(-2px); */
 }
 
 .card h3{
@@ -76,7 +75,7 @@ body{
 }
 
 .shadow-purple{
-    box-shadow: 5px 5px 0px 0px var(--shadow-purple);
+    box-shadow: 4px 4px 0px 0px var(--shadow-purple);
 }
 
 .shadow-purple:hover{
@@ -84,7 +83,7 @@ body{
 }
 
 .shadow-yellow{
-    box-shadow: 5px 5px 0px 0px var(--shadow-yellow);
+    box-shadow: 4px 4px 0px 0px var(--shadow-yellow);
 }
 
 .shadow-yellow:hover{
@@ -92,7 +91,7 @@ body{
 }
 
 .shadow-orange{
-    box-shadow: 5px 5px 0px 0px var(--shadow-orange);
+    box-shadow: 4px 4px 0px 0px var(--shadow-orange);
 }
 
 .shadow-orange:hover{
@@ -100,7 +99,7 @@ body{
 }
 
 .shadow-cyan{
-    box-shadow: 5px 5px 0px 0px var(--shadow-cyan);
+    box-shadow: 4px 4px 0px 0px var(--shadow-cyan);
 }
 
 .shadow-cyan:hover{
@@ -108,7 +107,7 @@ body{
 }
 
 .shadow-red{
-    box-shadow: 5px 5px 0px 0px var(--shadow-red);
+    box-shadow: 4px 4px 0px 0px var(--shadow-red);
 }
 
 .shadow-red:hover{
@@ -116,10 +115,95 @@ body{
 }
 
 .shadow-blue{
-    box-shadow: 5px 5px 0px 0px var(--shadow-blue);
+    box-shadow: 4px 4px 0px 0px var(--shadow-blue);
 }
 
 .shadow-blue:hover{
     box-shadow: 7px 7px 0px 0px var(--shadow-blue);
 }
 
+@media screen and (max-width: 880px){
+    body{
+        overflow-y: auto;
+    }
+
+    .main-cards{
+        width: 700px;
+        margin-top: 80px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 14px;
+        row-gap: 50px;
+    }
+
+    .card{
+        width: 240px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 732px){
+    .title h1{
+        font-size: 42px;
+    }
+
+   .main-cards{
+        width: 600px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .title {
+        margin: 14px 0;
+    }
+    .title h1{
+        font-size: 34px;
+    }
+
+   .main-cards{
+        width: 550px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 548px){
+    .title h1{
+        font-size: 32px;
+    }
+
+    .main-cards{
+        width: 700px;
+        margin-top: 80px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 14px;
+        row-gap: 50px;
+    }
+
+    .card{
+        width: 340px;
+        height: 220px;
+    }
+
+    .card h3{
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 465px){
+    .title h1{
+        font-size: 28px;
+    }
+
+    .card{
+        width: 300px;
+        height: 180px;
+    }
+
+    .card h3{
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
