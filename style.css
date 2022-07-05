@@ -174,11 +174,13 @@ body{
 
     .main-cards{
         width: 700px;
-        margin-top: 80px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 14px;
-        row-gap: 50px;
+        height: auto;
+        margin-top: 87px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     .card{
