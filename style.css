@@ -3,7 +3,6 @@
 :root{
     /* Colors */
     --main-color: #2F3E46;
-    /* Colors */
     --shadow-purple: #8963F5;
     --shadow-yellow: #F2F563;
     --shadow-orange: #F5B263;
@@ -26,12 +25,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background-color: #FAFAFA;
 }
 
 .title {
     margin: 30px 0;
+    display: flex;
+    align-items: center;
 }
 
 .title h1{
@@ -40,6 +41,7 @@ body{
     font-size: 52px;
 }
 
+/* ----------------- INDEX ------------------ */
 .main-cards{
     /* border: 2px solid var(--main-color); */
     width: 900px;
@@ -51,6 +53,10 @@ body{
     column-gap: 24px;
     row-gap: 74px;
     justify-items: center;
+}
+
+.main-cards a{
+    text-decoration: none;
 }
 
 .card{
@@ -120,6 +126,45 @@ body{
 
 .shadow-blue:hover{
     box-shadow: 7px 7px 0px 0px var(--shadow-blue);
+}
+
+
+/* ----------------- BG CHANGER ------------------ */
+.back-arrow{
+    margin-right: 40px;
+}
+
+.btn-changer{
+    border: 3px solid var(--main-color);
+    border-radius: 16px;
+    margin: 100px 0;
+    width: 320px;
+    height: 100px;
+    padding: 0 20px;
+    color: var(--main-color);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease-in-out;
+}
+
+.btn-changer:hover{
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #FAFAFA;
+}
+
+.code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code h3{
+    font-size: 22px;
+    color: var(--main-color);
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 880px){
@@ -196,7 +241,7 @@ body{
 
 @media screen and (max-width: 465px){
     .title h1{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .card{
