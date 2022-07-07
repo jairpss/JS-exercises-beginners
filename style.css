@@ -167,6 +167,11 @@ body{
     margin-bottom: 30px;
 }
 
+.code img{
+    width: 800px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 880px){
     body{
         overflow-y: auto;
