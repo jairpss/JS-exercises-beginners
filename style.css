@@ -172,6 +172,73 @@ body{
     border-radius: 10px;
 }
 
+
+/* -------------- COUNTER -------------- */
+
+.container-counter{
+    display: flex;
+    /* border: 3px solid var(--main-color); */
+    margin: 60px 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-count{
+    background-color: var(--shadow-blue);
+    color: #FAFAFA;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* padding: 10px; */
+    margin:  0 60px;
+    font-size: 28px;
+    font-weight: 700;
+    transition: all 0.2s ease
+}
+
+.btn-count:hover{
+    cursor: pointer;
+    background-color: #495dcf;
+}
+.counter-number{
+    background-color: #FFF;
+    border: 3px solid var(--main-color);
+    border-radius: 16px;
+    padding: 0px 50px;
+
+}
+
+.counter-number h2{
+    font-size: 54px;
+    color: var(--main-color);
+}
+
+.container-btn-restart{
+    display: flex;
+    justify-content:center;
+}
+
+.btn-restart-counter{
+    background-color: var(--main-color);
+    color: #FAFAFA;
+    border: none;
+    width: 140px;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-bottom: 120px;
+    transition: all 0.2s ease
+}
+
+.btn-restart-counter:hover{
+    cursor: pointer;
+    background-color: #40535d;
+}
+
 @media screen and (max-width: 880px){
     body{
         overflow-y: auto;

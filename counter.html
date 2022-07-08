@@ -12,11 +12,27 @@
         <a href="./index.html" class="back-arrow"><img src="./img/arrow-left.svg" alt=""></a>
         <h1>Counter</h1>
     </div>
+    <main>
+        <div class="container-counter">
+            <button class="btn-count" id="minus-btn" onclick="decrement()">
+                <img src="./img/minus.svg" alt="">
+            </button>
+            <div class="counter-number">
+                <h2 id="counter-num">0</h2>
+            </div>
+            <button class="btn-count" id="plus-btn" onclick="increment()">
+                <img src="./img/plus.svg" alt="">
+            </button>
+        </div>
+        <div class="container-btn-restart">
+            <button class="btn-restart-counter" id="restart-btn" onclick="restartNum()">Restart</button>
+        </div>
+        <div class="code">
+            <h3>Code</h3>
+            <img src="./img/code.png" alt="code">
+        </div>
+    </main>
 
-
-    <!-- <div class="code">
-        <h3>Code</h3>
-        <img src="./img/code-bg-change.png" alt="code">
-    </div> -->
+<script src="./counter.js"></script>
 </body>
 </html>
