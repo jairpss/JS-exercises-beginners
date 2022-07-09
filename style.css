@@ -29,6 +29,13 @@ body{
     background-color: #FAFAFA;
 }
 
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
 .title {
     margin: 30px 0;
     display: flex;
@@ -132,6 +139,10 @@ body{
 /* ----------------- BG CHANGER ------------------ */
 .back-arrow{
     margin-right: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.back-arrow:hover{
+    transform: translateX(-8px);
 }
 
 .btn-changer{
@@ -268,6 +279,10 @@ body{
         width: 600px;
         margin-top: 60px;
     }
+
+    .code img{
+        width: 600px;
+    }
 }
 
 @media screen and (max-width: 605px){
@@ -282,6 +297,20 @@ body{
         width: 550px;
         margin-top: 40px;
     }
+
+    .back-arrow{
+        margin-right: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .back-arrow img{
+        width: 30px;
+    }
+
+    .code img{
+        width: 500px;
+    }
+    
 }
 
 @media screen and (max-width: 548px){
@@ -309,6 +338,21 @@ body{
         font-size: 28px;
         font-weight: 700;
     }
+
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .btn-changer{
+        font-size: 18px;
+        margin: 60px 0;
+        width: 280px;
+        height: 80px;
+        padding: 0 10px;
+    }
 }
 
 @media screen and (max-width: 465px){
@@ -324,5 +368,9 @@ body{
     .card h3{
         font-size: 24px;
         font-weight: 700;
+    }
+
+    .code img{
+        width: 380px;
     }
 }
