@@ -305,6 +305,11 @@ body{
         width: 240px;
         height: 160px;
     }
+
+    .txt-area{
+        width: 800px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 732px){
@@ -319,6 +324,11 @@ body{
 
     .code img{
         width: 600px;
+    }
+
+    .txt-area{
+        width: 600px;
+        height: 100px;
     }
 }
 
@@ -346,6 +356,11 @@ body{
 
     .code img{
         width: 500px;
+    }
+
+    .txt-area{
+        width: 500px;
+        height: 100px;
     }
     
 }
@@ -390,6 +405,11 @@ body{
         height: 80px;
         padding: 0 10px;
     }
+
+    .txt-area{
+        width: 500px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 465px){
@@ -409,5 +429,17 @@ body{
 
     .code img{
         width: 380px;
+    }
+
+    .txt-area{
+        width: 400px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .txt-area{
+        width: 350px;
+        height: 100px;
     }
 }
