@@ -73,6 +73,7 @@ body{
     height: 134px;
     padding: 0 20px;
     color: var(--main-color);
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,6 +251,48 @@ body{
     background-color: #40535d;
 }
 
+/* -------------- CLOCK -------------- */
+.container-clock{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.clock{
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: 2rem;
+}
+
+.clock-face {
+    position: relative;
+    background: var(--main-color);;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  
+  .clock-face::after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+  
+  .clock-face::after,
+  .clock-face::before,
+  .clock-face .marking{
+    content: '';
+    position: absolute;
+    width: 5px;
+    border-radius: 2px;
+    height: 100%;
+    background: var(--shadow-cyan);
+    z-index: 0;
+    left: 49%;
+  }
 
 /* -------------- LETTER COUNTER -------------- */
 
