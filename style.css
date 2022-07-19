@@ -9,6 +9,7 @@
     --shadow-cyan: #4BEBD8;
     --shadow-red: #F56398;
     --shadow-blue: #637AF5;
+    --btn-calculator: #3D4C56;
 
 }
 
@@ -420,6 +421,7 @@ body{
 
 
 /*----------------CALCULATOR-----------------*/
+
 .calculator-main{
     display: flex;
     justify-content: center;
@@ -432,6 +434,79 @@ body{
     height: 500px;
     border-radius: 14px;
     margin: 30px auto;
+    padding: 12px;
+}
+
+.input-calculator{
+    height: 80px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 34px;
+    color: var(--main-color);
+    font-weight: 700;
+    padding: 10px;
+    text-align: right;
+    border: none;
+}
+
+.lg-btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 0 12px 0;
+    height: 66px;
+}
+
+.btn-clear{
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 28px;
+    font-weight: 700;
+    background-color: var(--shadow-blue);
+    color: #FAFAFA;
+    transition: 0.1s ease-in-out;
+}
+
+.btn-clear:hover{
+    background-color: #5d6fd6;
+    cursor: pointer;
+}
+
+.btn-delete{
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-left: 6px;
+    background-color: var(--shadow-red);
+    transition: 0.1s ease-in-out;
+
+}
+.btn-delete:hover{
+    background-color: #e0578a;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.btn-num{
+    background-color: var(--btn-calculator);
+    height: 70px;
+    border-radius: 6px;
+    border: none;
+    color: #FAFAFA;
+    font-size: 28px;
+    font-weight: 700;
+}
+.btn-num:hover{
+    background-color: #3a4852;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 880px){
