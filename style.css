@@ -496,7 +496,7 @@ body{
 }
 
 .btn-num{
-    background-color: var(--btn-calculator);
+    background-color: var(--main-color);
     height: 70px;
     border-radius: 6px;
     border: none;
@@ -504,7 +504,23 @@ body{
     font-size: 28px;
     font-weight: 700;
 }
+
 .btn-num:hover{
+    background-color: #3a4852;
+    cursor: pointer;
+}
+
+.btn-func{
+    background-color: var(--main-color);
+    height: 70px;
+    border-radius: 6px;
+    border: none;
+    color: var(--shadow-cyan);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.btn-func:hover{
     background-color: #3a4852;
     cursor: pointer;
 }

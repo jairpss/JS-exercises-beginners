@@ -1,0 +1,5 @@
+const input = document.getElementById('input-answer')
+const buttons = document.querySelectorAll('button')
+const clearBtn = document.getElementById('clear-btn')
+const deleteBtn = document.getElementById('delete-btn')
+const equalBtn = document.getElementById('equals')
