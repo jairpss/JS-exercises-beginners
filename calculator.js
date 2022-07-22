@@ -1,6 +1,5 @@
 const currentInput = document.getElementById('current-input')
 const answer = document.getElementById('answer-calculator')
-
 const buttons = document.querySelectorAll('button')
 const clearBtn = document.getElementById('clear-btn')
 const deleteBtn = document.getElementById('delete-btn')
