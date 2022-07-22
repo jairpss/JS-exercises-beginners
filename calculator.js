@@ -11,7 +11,6 @@ let calcScreenValue = []
 
 //clear btn
 clearBtn.addEventListener("click", () => {
-    console.log("clear")
     calcScreenValue = [''];
     answer.innerHTML = 0;
     currentInput.className = 'current-input'
@@ -21,7 +20,7 @@ clearBtn.addEventListener("click", () => {
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
-        // when clicked any button num btn except delete 
+        // when clicked any button num except delete 
         if (!btn.id.match('delete-btn')) {
             // To display value on btn press
             calcScreenValue.push(btn.value)
@@ -29,9 +28,7 @@ buttons.forEach((btn) => {
 
             // To evaluate answer in real time
             if (btn.classList.contains('btn-num')) {
-
                 answer.innerHTML = eval(calcScreenValue.join(''));
-
             }
         }
 

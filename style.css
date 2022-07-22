@@ -78,7 +78,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out;
 }
 
 .card:hover{
@@ -707,5 +707,9 @@ body{
         width: 20rem;
         height: 20rem;
         padding: 1rem;
+    }
+
+    .calculator-container{
+        width: 360px;
     }
 }
