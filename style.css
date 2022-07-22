@@ -428,6 +428,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 .calculator-container{
     background-color: var(--main-color);
     width: 400px;
@@ -437,16 +438,39 @@ body{
     padding: 12px;
 }
 
-.input-calculator{
-    height: 80px;
+.input-container{
     width: 100%;
+    height: 80px;
+    background-color: #FAFAFA;
     border-radius: 8px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    border: none;
+   
+}
+
+.answer-calculator{
+    text-align: right;
+    /* line-height: 3; */
+    padding-right: 10px;
+    font-size: 28px;
+    color: var(--btn-calculator);
+    /* background-color: #26cf00; */
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.current-input{
     font-size: 34px;
     color: var(--main-color);
     font-weight: 700;
-    padding: 10px;
+    padding-right: 10px;
     text-align: right;
-    border: none;
+    word-wrap: break-word;
+    /* background-color: #c342c3; */
+    border-radius: 8px;
 }
 
 .lg-btn-container{
