@@ -598,6 +598,70 @@ body{
     background-color: #51f7ba;
     cursor: pointer;
 }
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between; 
+    background-color: var(--main-color);
+	padding: 1rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+    width: 470px;
+    align-items: center;
+}
+
+.task .content {
+	flex: 1 1 0%;
+    margin-right: 18px;
+}
+
+.task .content .text {
+	color: #FAFAFA;
+    background-color: transparent;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+    border: none;
+    padding: 6px;
+    
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--shadow-cyan);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+    justify-content:center;
+    align-items:center;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions .edit {
+	color: var(--shadow-cyan);
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.delete{
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+}
+
 @media screen and (max-width: 880px){
     body{
         overflow-y: auto;

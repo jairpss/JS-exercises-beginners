@@ -15,11 +15,28 @@
     <main class="container-todo">
         <h1 class="title-todo">Task for Today</h1>
         <div class="container-input">
-            <input type="text" class="input-todo" placeholder="Add a new task">
-            <button class="btn-add-todo">
+            <input type="text" class="input-todo" placeholder="Add a new task" id="input-new-task">
+            <button class="btn-add-todo" id="btn-add-submit">
                 <img src="./img/plus-square.svg">
             </button>
         </div>
+        <section class="container-task-list">
+            <div id="tasks">
+                <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete"><img src="./img/x-square.svg" alt=""></button>
+					</div>
+				</div>
+            </div>
+        </section>
     </main>
     <div class="code">
             <h3>Code</h3>
