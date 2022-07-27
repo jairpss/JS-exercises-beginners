@@ -552,7 +552,7 @@ body{
 
 .container-todo{
     width: 60%;
-    height: 400px;
+    height: 100%;
     border: 3px solid var(--main-color);
     border-radius: 16px;
     background-color: #ffffff;
@@ -628,11 +628,9 @@ body{
 
 .text:focus{
     border: none;
+    outline: none;
 }
 
-.text:active{
-    border: none;
-}
 .task .content .text:not(:read-only) {
 	color: var(--shadow-cyan);
 }
@@ -671,6 +669,11 @@ body{
     font-weight: 500;
 }
 
+@media screen and (max-width: 1000px){
+    .container-todo{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 880px){
     body{
         overflow-y: auto;
@@ -694,6 +697,10 @@ body{
         width: 800px;
         height: 100px;
     }
+
+    .container-todo{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 732px){
@@ -713,6 +720,10 @@ body{
     .txt-area{
         width: 600px;
         height: 100px;
+    }
+
+    .container-todo{
+        width: 100%;
     }
 }
 
@@ -747,6 +758,13 @@ body{
         height: 100px;
     }
     
+    .input-todo{
+        width: 350px;
+    }
+
+    #tasks .task{
+        width: 420px;
+    }
 }
 
 @media screen and (max-width: 548px){
@@ -796,6 +814,19 @@ body{
     }
 }
 
+@media screen and (max-width: 500px){
+    .input-todo{
+        width: 300px;
+    }
+
+    #tasks .task{
+        width: 370px;
+    }
+
+    .task .content .text{
+        padding: 0;
+    }
+}
 @media screen and (max-width: 465px){
     .title h1{
         font-size: 28px;
@@ -819,6 +850,8 @@ body{
         width: 400px;
         height: 100px;
     }
+
+    
 }
 
 @media screen and (max-width: 450px){
@@ -835,5 +868,17 @@ body{
 
     .calculator-container{
         width: 360px;
+    }
+
+    .input-todo{
+        width: 240px;
+    }
+
+    #tasks .task{
+        width: 310px;
+    }
+
+    .text {
+        padding: 0;
     }
 }
