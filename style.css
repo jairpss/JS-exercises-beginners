@@ -652,14 +652,17 @@ body{
 	color: var(--shadow-cyan);
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .delete{
     background-color: transparent;
     border: none;
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    color: var(--shadow-red);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 880px){
