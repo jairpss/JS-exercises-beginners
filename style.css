@@ -624,9 +624,15 @@ body{
 	transition: 0.4s;
     border: none;
     padding: 6px;
-    
 }
 
+.text:focus{
+    border: none;
+}
+
+.text:active{
+    border: none;
+}
 .task .content .text:not(:read-only) {
 	color: var(--shadow-cyan);
 }
