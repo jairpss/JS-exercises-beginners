@@ -79,7 +79,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: box-shadow 0.1s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .card:hover{
@@ -88,6 +88,23 @@ body{
 
 .card h3{
     font-size:22px;
+}
+
+footer{
+    height: 34px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--main-color);
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .shadow-purple{
@@ -732,7 +749,7 @@ body{
         margin: 14px 0;
     }
     .title h1{
-        font-size: 34px;
+        font-size: 38px;
     }
 
    .main-cards{
@@ -769,7 +786,7 @@ body{
 
 @media screen and (max-width: 548px){
     .title h1{
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .main-cards{
@@ -829,7 +846,7 @@ body{
 }
 @media screen and (max-width: 465px){
     .title h1{
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .card{

@@ -3,7 +3,6 @@ const minsHand = document.querySelector('.min-hand')
 const hourHand = document.querySelector('.hour-hand')
 
 function setDate(){
-    console.log('okay')
     const current = new Date()
 
     const seconds = current.getSeconds()
