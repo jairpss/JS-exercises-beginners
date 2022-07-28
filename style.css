@@ -29,6 +29,7 @@ body{
     align-items: center;
     /* overflow-y: hidden; */
     background-color: #FCFCFC;
+    
 }
 
 .desktop {
@@ -52,7 +53,6 @@ body{
 
 /* ----------------- INDEX ------------------ */
 .main-cards{
-    /* border: 2px solid var(--main-color); */
     width: 900px;
     height: 400px;
     margin-top: 100px;
@@ -718,6 +718,10 @@ footer h3{
     .container-todo{
         width: 90%;
     }
+
+    footer{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 732px){
@@ -742,6 +746,7 @@ footer h3{
     .container-todo{
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 605px){
@@ -782,6 +787,7 @@ footer h3{
     #tasks .task{
         width: 420px;
     }
+
 }
 
 @media screen and (max-width: 548px){
@@ -828,6 +834,11 @@ footer h3{
     .txt-area{
         width: 500px;
         height: 100px;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 20px;
     }
 }
 
